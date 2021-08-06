@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.bar {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 10px black;
+}
+.bg {
+  position: absolute;
+  background: url('https://images.pexels.com/photos/9067435/pexels-photo-9067435.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110%;
+  width: 110%;
+  z-index: -1;
+  filter: blur(2px);
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #8ecae6; */
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main .cmd {
+  height: 80%;
+  width: 50%;
+  background-color: #023047;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  flex: 0.3;
+  color: #fff;
+}
+.main .spider {
+  height: 80%;
+  width: 30%;
+  background-color: #fd9e02;
+  border-radius: 20px;
+  padding: 10px;
+  flex: 0.3;
+}
+.user {
+  margin: 10px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  background-color: #219ebc;
+  height: 5%;
+  width: 40%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  opacity: 0.8;
+  display: flex;
+}
+.user .input {
+  border: 0;
+  margin: 5px;
+  border-radius: 10px;
+  width: 20%;
+  transition: width 0.3s ease;
+}
+.user .input:focus {
+  outline: none;
+}
+.user .btn {
+  border-radius: 10px;
+  border: 0;
+  margin: 5px;
+  padding: 0 20px;
+  background-color: #895701;
+}
+.user {
+  transition: all 0.3s ease-in-out;
+}
+.input.active {
+  width: 80%;
+}
+.spider {
+  display: flex;
+  justify-content: center;
+}
+.cpu {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  width: 100vw;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+.cmd.active,
+.spider.active {
+  flex: 1;
+}
+#cpu {
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease-in-out 1s;
+}
+.main .spider,
+.main .cmd {
+  transition: flex 0.3s ease-in-out;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Index</title>
+    <link rel="stylesheet" href="./css/cloud.css">
+</head>
+
+<body>
+    <section class="bg"></section>
+    <div class="container">
+        <div class="bar">
+            <h1>Shell-Index</h1>
+        </div>
+        <div class="main">
+            <div class="cmd">
+                <%- include('cloud/cmd') %>
+            </div>
+            <div class="spider">
+
+                <%- include('cloud/spider') %>
+            </div>
+        </div>
+        <div class="user">
+            <input type="text" class="input">
+            <button class="btn">Submit</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.1.2/echarts.min.js"
+        integrity="sha512-ppWbHq6q2f7HAwS481w6qikuC0XEeBnmkRg6KWnWg3zSIbJwWWBgsCDMAxzSB7SVqXzWwSYQ2s8TSJKjnaikMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/myEcharts.js"></script>
+    <script src="./js/cloud.js"></script>
+</body>
+
+</html>
