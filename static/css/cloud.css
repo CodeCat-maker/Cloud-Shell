@@ -122,3 +122,9 @@ body {
 .main .cmd {
   transition: flex 0.3s ease-in-out;
 }
+.terminal {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

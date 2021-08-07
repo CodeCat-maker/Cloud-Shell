@@ -23,9 +23,10 @@ spider.addEventListener("mouseleave", () => {
 
 input.addEventListener("mouseenter", () => {
     input.classList.add("active");
+    cmd.classList.add("active");
 })
 input.addEventListener("mouseleave", () => {
     input.classList.remove("active");
+    cmd.classList.remove("active");
 })
-
 
