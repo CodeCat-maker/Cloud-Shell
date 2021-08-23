@@ -50,6 +50,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   right: 0;
+  transform: translateX();
 }
 .split.left::before {
   content: '';
@@ -118,6 +119,7 @@ p {
   font-weight: bold;
   text-decoration: none;
 }
+
 .hover-left .left {
   width: var(--hover-width);
 }
@@ -135,6 +137,74 @@ p {
 .split.left::before,
 .split.right::before {
   transition: all var(--speed) ease-in-out;
+}
+.loginBox {
+  display: none;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  background-color: #b7b7a4;
+  left: 50vw;
+  top: 30vh;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #6b705c;
+}
+.form-control {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  color: #99735f;
+}
+.form-control input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #99735f;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 16px;
+  color: #fff;
+}
+.form-control input:focus,
+.form-control input:valid {
+  outline: none;
+}
+.form-control label {
+  position: absolute;
+  top: 15px;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.loginLogo {
+  width: 25%;
+  height: 25%;
+  background: url('https://images.pexels.com/photos/4878345/pexels-photo-4878345.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500')
+    center;
+  background-size: 200%;
+  position: relative;
+  top: 10%;
+  margin-left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+.LoginBtn {
+  padding: 10px 20px;
+  width: 50%;
+  display: inline-block;
+  transform: translateX(50%);
+  color: #fff;
+  background-color: #6b705c;
+  font-size: 18px;
+  position: fixed;
+  border: 0;
+  border-radius: 5px;
+  bottom: 30px;
+  cursor: pointer;
+}
+.form-control input:focus + label,
+.form-control input:valid + label {
+  transform: translateY(-30px);
 }
 @media (max-width: 800px) {
   h1 {

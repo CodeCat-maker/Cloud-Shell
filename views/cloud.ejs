@@ -8,15 +8,10 @@
     <title>Cloud-Index</title>
     <link rel="stylesheet" href="./other/xterm/css/xterm.css">
     <link rel="stylesheet" href="./css/cloud.css">
-
 </head>
 
 <body>
-    <section class="bg"></section>
-    <div class="container">
-        <div class="bar">
-            <h1>Shell-Index</h1>
-        </div>
+    <%- include('template/header') %>
         <div class="main">
             <div class="cmd">
                 <%- include('cloud/cmd') %>
@@ -29,15 +24,15 @@
             <input type="text" class="input">
             <button class="btn">Submit</button>
         </div>
-    </div>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./other/xterm/lib/xterm.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.1.2/echarts.min.js"
-        integrity="sha512-ppWbHq6q2f7HAwS481w6qikuC0XEeBnmkRg6KWnWg3zSIbJwWWBgsCDMAxzSB7SVqXzWwSYQ2s8TSJKjnaikMg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/myEcharts.js"></script>
-    <script src="./js/cloud.js"></script>
-    <script src="./js/client.js"></script>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./other/xterm/lib/xterm.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.1.2/echarts.min.js"
+            integrity="sha512-ppWbHq6q2f7HAwS481w6qikuC0XEeBnmkRg6KWnWg3zSIbJwWWBgsCDMAxzSB7SVqXzWwSYQ2s8TSJKjnaikMg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/myEcharts.js"></script>
+        <script src="./js/cloud.js"></script>
+        <script src="./js/client.js"></script>
 </body>
 
 </html>
